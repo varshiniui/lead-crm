@@ -42,9 +42,9 @@ export default function LeadTable({ leads, onUpdate, onDelete }) {
                             <td style={td}>
                                 <select value={lead.status} onChange={e => handleStatus(lead.id, e.target.value)}
                                     style={{ border: "none", borderRadius: 6, cursor: "pointer", fontSize: 12, fontWeight: 600, padding: "4px 8px", background: `${CLR[lead.status]}22`, color: CLR[lead.status], outline: "none" }}>
-                                    <option>Interested</option>
-                                    <option>Not Interested</option>
-                                    <option>Converted</option>
+                                    <option style={{ background: "#1a1a22", color: "#f6c90e" }}>Interested</option>
+                                    <option style={{ background: "#1a1a22", color: "#e63946" }}>Not Interested</option>
+                                    <option style={{ background: "#1a1a22", color: "#2ec27e" }}>Converted</option>
                                 </select>
                             </td>
                             <td style={{ ...td, color: "#888", fontSize: 12 }}>
