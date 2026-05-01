@@ -2,8 +2,7 @@ import React from "react";
 import { updateStatus, deleteLead } from "../api";
 
 const SRC = { Call: "📞", WhatsApp: "💬", Field: "🏃" };
-const CLR = { Interested: "#f6c90e", "Not Interested": "#e63946", Converted: "#2ec27e" };
-
+const CLR = { Interested: "#f6c90e", "Not Interested": "#e63946", Converted: "#2ec27e", new: "#f6c90e" };
 export default function LeadTable({ leads, onUpdate, onDelete }) {
     if (!leads.length) return (
         <div style={{ border: "1px dashed #2a2a38", borderRadius: 10, padding: 48, textAlign: "center", color: "#888" }}>

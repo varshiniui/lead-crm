@@ -36,7 +36,7 @@ export default function App() {
             <div style={{ display: "flex", gap: 12, marginBottom: 24 }}>
                 {[
                     { label: "Total", value: leads.length, color: "#fff" },
-                    { label: "Interested", value: leads.filter(l => l.status === "Interested").length, color: "#f6c90e" },
+                    { label: "Interested", value: leads.filter(l => l.status === "Interested" || l.status === "new").length, color: "#f6c90e" },
                     { label: "Converted", value: leads.filter(l => l.status === "Converted").length, color: "#2ec27e" },
                     { label: "Not Interested", value: leads.filter(l => l.status === "Not Interested").length, color: "#e63946" },
                 ].map(s => (
