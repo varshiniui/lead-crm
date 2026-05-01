@@ -21,3 +21,5 @@ initDB()
         console.error("DB init failed:", err.message);
         process.exit(1);
     });
+
+module.exports = app; // ← for Vercel serverless
